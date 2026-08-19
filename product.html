@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" href="/css/gridstyle.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <img src="images/header.jpg" alt="AURA">
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="product.html">Products</a>
+
+    </nav>
+
+
+    <main>
+
+        <!-- ฝั่งซ้าย -->
+        <section class="content">
+
+            <article>
+
+                <h2>Our Catalog</h2>
+
+                <p>
+                    Browse products and details below.
+                </p>
+
+                <img
+                    src="images/product1.jpg"
+                    alt="Headphone"
+                    class="product-img"
+                >
+
+            </article>
+
+
+            <article>
+
+                <h3>Product Name</h3>
+
+                <p>
+                    Short description, price,
+                    and actions
+                    (add to cart, view details).
+                </p>
+
+                <img
+                    src="images/product2.jpg"
+                    alt="Product"
+                    class="product-img"
+                >
+
+            </article>
+
+        </section>
+
+
+        <!-- Aside -->
+        <aside>
+
+            <h3>สมัครสมาชิก</h3>
+
+            <form>
+
+                <label for="firstname">ชื่อ</label>
+
+                <input
+                    type="text"
+                    id="firstname"
+                    placeholder="ชื่อจริง"
+                    required
+                >
+
+
+                <label for="lastname">
+                    นามสกุล
+                </label>
+
+                <input
+                    type="text"
+                    id="lastname"
+                    placeholder="นามสกุล"
+                    required
+                >
+
+
+                <label for="email">
+                    อีเมล
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@domain.com"
+                    required
+                >
+
+
+                <label for="password">
+                    รหัสผ่าน
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="อย่างน้อย 8 ตัวอักษร"
+                    minlength="8"
+                    required
+                >
+
+
+                <label for="confirm-password">
+                    ยืนยันรหัสผ่าน
+                </label>
+
+                <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="ยืนยันรหัสผ่าน"
+                    minlength="8"
+                    required
+                >
+
+
+                <label for="phone">
+                    เบอร์โทรศัพท์
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="083-xxx-xxxx"
+                >
+
+
+                <label>เพศ</label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                        >
+                        ชาย
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                        >
+                        หญิง
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                        >
+                        ไม่ระบุ
+                    </label>
+
+                </div>
+
+
+                <div class="checkbox-inline">
+
+                    <label>
+                        <input type="checkbox">
+                        รับข่าวสาร
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        โปรโมชั่น
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        กิจกรรม
+                    </label>
+
+                </div>
+
+
+                <label for="member">
+                    ประเภทสมาชิก
+                </label>
+
+                <select id="member">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="premium">
+                        Premium
+                    </option>
+
+                    <option value="vip">
+                        VIP
+                    </option>
+
+                </select>
+
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    ยอมรับข้อกำหนดและเงื่อนไข
+
+                </label>
+
+
+                <button type="submit">
+                    สมัครสมาชิก
+                </button>
+
+
+                <p class="privacy">
+                    เราจะเก็บข้อมูลของคุณเป็นความลับ
+                </p>
+
+            </form>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 AURA Acoustics Ltd.
+            All rights reserved.
+        </p>
+
+        <img
+            src="images/footer.jpg"
+            alt="Payment"
+        >
+
+    </footer>
+
+</div>
+
+</body>
+</html>

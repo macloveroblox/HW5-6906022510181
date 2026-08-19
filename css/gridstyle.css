@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 4px;
+
+    font-family: Arial, Tahoma, sans-serif;
+
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+
+    gap: 16px;
+}
+
+header {
+    grid-area: header;
+
+    height: 145px;
+
+    overflow: hidden;
+
+    border-radius: 3px;
+
+    background-color: #101322;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+nav {
+    grid-area: nav;
+
+    display: grid;
+
+    grid-template-columns:
+        max-content max-content;
+
+    gap: 30px;
+
+    padding: 20px;
+
+    background-color: pink;
+
+    border-radius: 3px;
+}
+
+nav a {
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    grid-area: main;
+
+    display: grid;
+
+    /*
+        ด้านซ้ายใหญ่
+        ด้านขวาเล็ก
+    */
+    grid-template-columns:
+        minmax(0, 3.3fr)
+        minmax(250px, 1fr);
+
+    gap: 16px;
+}
+
+.content {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+}
+
+article {
+    background-color: pink;
+
+    padding: 14px;
+
+    border-radius: 3px;
+}
+
+article h2,
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    line-height: 1.5;
+}
+
+.content-img {
+    width: 550px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+.product-img {
+    width: 450px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+aside {
+    background-color: pink;
+
+    padding: 14px;
+
+    border-radius: 3px;
+}
+
+
+aside h3 {
+    margin-top: 15px;
+}
+
+form {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+}
+
+
+form > label {
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+
+input:focus,
+select:focus {
+    outline: 2px solid #3399ff;
+}
+
+.radio-group {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 7px;
+}
+
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.checkbox-inline {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, max-content);
+
+    gap: 8px;
+
+    margin-top: 6px;
+}
+
+
+.checkbox-inline label {
+    font-weight: normal;
+}
+
+.terms {
+    margin-top: 4px;
+
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #0500a0;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #000070;
+}
+
+.privacy {
+    color: #666;
+
+    font-size: 13px;
+}
+
+footer {
+    grid-area: footer;
+
+    min-height: 100px;
+
+    padding: 25px 35px;
+
+    background-color: #101322;
+
+    color: #9da8ba;
+
+    border-radius: 3px;
+
+
+    /* Grid ภายใน Footer */
+    display: grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    align-items: center;
+}
+
+
+footer img {
+    max-width: 180px;
+
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+
+    .checkbox-inline {
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+}

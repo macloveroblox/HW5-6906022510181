@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="/css/gridstyle.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="images/header.jpg" alt="AURA">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+    </nav>
+    <main>
+        <section class="content">
+            <article>
+                <h2>ยินดีต้อนรับสู่ร้านของเรา</h2>
+                <p>เรามีสินค้าหลากหลายและราคาพิเศษสำหรับคุณ</p>
+                <img src="images/shop.jpg" alt="ร้านค้า"class="content-img">
+            </article>
+            <article>
+                <h2>ร้านอยู่จังหวัดปราจีนบุรี</h2>
+                <p>การเดินทางสะดวกเข้าได้สองทาง</p>
+                <img src="images/map.png" alt="แผนที่" class="content-img">
+            </article>
+
+        </section>
+
+        <aside>
+            <h3>สมัครสมาชิก</h3>
+            <form>
+                <label for="firstname">ชื่อ</label>
+                <input type="text" id="firstname" placeholder="ชื่อจริง" required >
+                <label for="lastname">นามสกุล</label>
+                <input type="text" id="lastname" placeholder="นามสกุล" required>
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร" minlength="8" required>
+                <label for="confirm-password">
+                    ยืนยันรหัสผ่าน
+                </label>
+                <input type="password" id="confirm-password" placeholder="ยืนยันรหัสผ่าน" minlength="8" required>
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <input
+                    type="tel" id="phone" placeholder="083-xxx-xxxx">
+                <label>เพศ</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male"> ชาย
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"value="female">หญิง
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="none">ไม่ระบุ
+                    </label>
+                </div>
+                <div class="checkbox-inline">
+
+                    <label>
+                        <input type="checkbox">
+                        รับข่าวสาร
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        โปรโมชั่น
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        กิจกรรม
+                    </label>
+                </div>
+                <label for="member">
+                    ประเภทสมาชิก
+                </label>
+                <select id="member">
+                    <option value="normal">
+                        Normal
+                    </option>
+                    <option value="premium">
+                        Premium
+                    </option>
+                    <option value="vip">
+                        VIP
+                    </option>
+                </select>
+                <label class="terms">
+                    <input type="checkbox" required>ยอมรับข้อกำหนดและเงื่อนไข
+                </label>
+                <button type="submit">
+                    สมัครสมาชิก
+                </button>
+                <p class="privacy">
+                    เราจะเก็บข้อมูลของคุณเป็นความลับ
+                </p>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <img src="images/footer.jpg" alt="Payment">
+    </footer>
+</div>
+</body>
+</html>
